@@ -6,10 +6,99 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track{
+    color: #29f;
+}
 
 body{
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background-color: #ccc;
+}
+
+#pagination-container{
+    width: 400px;
+    overflow: hidden;
+    height: 220px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px;
+}
+
+.page1{
+    color: red;
+    display: none;
+}
+
+.page2{
+    color: blue;
+    display: none;
+}
+
+.page3{
+    color: purple;
+    display: none;
+}
+
+.page4{
+    color: green;
+    display: none;
+}
+
+.page1.current{
+    display: block;
+}
+
+.page2.current{
+    display: block;
+}
+
+.page3.current{
+    display: block;
+}
+
+.page4.current{
+    display: block;
+}
+
+#pg-one{
+    padding: .5rem;
+    background-color: #29f;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#pg-two{
+    padding: .5rem;
+    background-color: #f29;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#pg-three{
+    padding: .5rem;
+    background-color: #2f9;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#pg-four{
+    padding: .5rem;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
